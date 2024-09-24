@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvqe1eeqt0qod"]
+
+[ext_resource type="Texture2D" uid="uid://dr7qhh0uyyx6i" path="res://assets/Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/Main Ship - Base - Full health.png" id="1_mjj5e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gdt7k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mjj5e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gdt7k")
